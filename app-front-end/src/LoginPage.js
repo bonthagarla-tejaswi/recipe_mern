@@ -49,6 +49,7 @@ class LoginPage extends React.Component {
             required
           />
           <button type="submit">login</button>
+      
         </form>
       </div>
     );
