@@ -6,6 +6,16 @@ const app= express()
 app.use(express.json())
 
 
+app.get('/',(req,res)=>{
+    res.send("Server running!");
+})
+app.post('/LoginPage/:name/:password',async (req, res) => {
+    const details = await db.collection('recipe').insertOne({name:req.params.name,password:req.params.password
+    })
+ res.json(details);
+});
+
+
 
 connectToDB(()=>{
     app.listen(9000,()=>{
