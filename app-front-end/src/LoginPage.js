@@ -1,24 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
-
+import {useNavigate} from "react-router-dom";
 class LoginPage extends React.Component {
-  const [name,setName] =useState("")
-  const [password,setPassword] =useState("")
-  const Handleclick=async()=>{
-    const  responce = await axios.post("http://localhost:9000/LoginPage/"+name+"/"+password);
-        console.log(responce.data);
-        if(responce.data)
-        {
-            alert("successful");
-            nav('/main');
-        }
-        else{
-            alert("failed")
-        }
-
-
-    }
 
   constructor(props) {
     super(props);
@@ -43,6 +27,23 @@ class LoginPage extends React.Component {
     event.preventDefault();
     // Handle login logic
   }
+  const [name,setName] =useState("")
+  const [password,setPassword] =useState("")
+  const Handleclick=async()=>{
+    const  responce = await axios.post("http://localhost:9000/LoginPage/"+name+"/"+password);
+        console.log(responce.data);
+        if(responce.data)
+        {
+            alert("successful");
+            nav('/main');
+        }
+        else{
+            alert("failed")
+        }
+
+
+    }
+
 
   render() {
     return (
