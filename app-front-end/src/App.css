@@ -1,25 +1,23 @@
-home {
+.home {
 	background-color: #a2eee0;
   }
-  body{
+  .register{
 	background-color:lightblue;
   }
   .LoginPage{
-	background-color: lightblue;
-  }
-  .signup{
-	background-color:lightgoldenrodyellow;
+	background-color:rgb(137, 234, 206);
   }
   .all{
 	text-align: center;
 	min-height: 100vh;
 	font-size: calc(10px + 2vmin);
-	color: rgb(23, 22, 22);
+	color: rgb(233, 57, 21);
   }
   img{
 	border-radius: 50%;
   }
-  button{
+ home.button{
+	margin-left:80%;
 	font-family:cursive;
 	height:30px;
 	width:100px;
