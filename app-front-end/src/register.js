@@ -20,10 +20,10 @@ function Register() {
 
   
   return (
-    <div className="register">
-      <center>
+    <div className='register' >
+      <div className="regcss">
       <h1>App Registration</h1>
-      <>
+     
         <label>
          <p>  Name:</p>
           <input type="text" name="name" onChange={(e) => setName(e.target.value)} />
@@ -39,8 +39,8 @@ function Register() {
           <input type="password" name="password" onChange={(e) => setPassword(e.target.value)} />
         </label><br></br><br></br>
         <button onClick={Handleclick}>Register</button>
-      </>
-      </center>
+      </div>
+
     </div>
   );
   }

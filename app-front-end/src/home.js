@@ -14,16 +14,13 @@ const Home =() =>{
         nav("/register")
     }
     return(
-        <div className="home">
-            <div classname="all">
+        <div className="home1">
+            <>
                 <br/>
                 <button onClick={login1}>Log-in</button><br/><br/>
                 <button onClick={register1}>Register</button>
-                
-                <img src="logo.jpg" height="300px" width="300px"/><br/>
-                <h1><b><i>Recipe App</i></b></h1>
-
-            </div>
+               <div className="h"> <b><i>Recipe App</i></b></div>
+            </>
         </div>
     );
 }

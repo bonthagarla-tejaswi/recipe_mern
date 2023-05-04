@@ -1,16 +1,31 @@
-.home{
-	background-color: #8b9694;
-	min-height:100hv;
+.home1{
+	background-image:url(C:\Users\bteja\OneDrive\Desktop\recipe_mern\app-front-end\public\jm.jpeg);
+	background-repeat: no-repeat;
+	background-size:cover  ;
+	min-height:100vh;
+	
 
   }
   .login{
-	background-color: rgb(142, 214, 241);
-	min-height:100hv;
+	background-color: rgb(243, 208, 208);
+	min-height:100vh;
 	text-align:center;
   }
   .register{
-	background-color:lightgoldenrodyellow;
-	min-height:100hv ;
+	background-image:url(C:\Users\bteja\OneDrive\Desktop\recipe_mern\app-front-end\public\register.jpg) ;
+	background-repeat: no-repeat;
+	background-size:cover  ;
+	min-height:100vh ;
+  }
+  .logincss{
+	background-image:url(C:\Users\bteja\OneDrive\Desktop\recipe_mern\app-front-end\public\register.jpg) ;
+	background-repeat: no-repeat;
+	background-size:cover  ;
+	min-height:100vh ;
+  }
+  .regcss{
+	text-align: center;
+	color: antiquewhite;
   }
   .all{
 	text-align: center;
@@ -24,45 +39,19 @@
 
 	
   }
-  h1{
+  .h{
 	text-align:center;
+	color:beige;
+	font-size:50px;
+	font-family:monospace;
+	
+
   }
   button{
-	margin-left: 80%;
-	font-family:cursive;
+	margin-left:3%;
+	font-family:monospace;
 	height:30px;
 	width:100px;
 	border-radius: 50px;
-  }
-  .Abc{
-	margin-left: -5%;
-  }
-  .screen1{
-	width:760px;
-	height:650px;
-  }
-  .screen2{
-	width:773px;
-	height:650px;
-	margin-left: 760px;
-	margin-top: -650px;
-  }
-  p{
-	text-align: center;
-	font-family: cursive;
-  }
-  .inputfield{
-	height:30px;
-	width:83%;
-	margin-left:5%;
-	margin-top: 1%;
-  }
-  .enter{
-	margin-top:-1%;
-	margin-left: 2%;
-  }
-  .color{
-	background-color:lightgray;
-	min-height: 100vh;
   }
   
