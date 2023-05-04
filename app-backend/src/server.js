@@ -1,5 +1,6 @@
 import express from "express";
 import { db,connectToDB } from "./db.js";
+<<<<<<< HEAD
 import cors from 'cors';
 
 
@@ -22,6 +23,22 @@ app.get                                                                         
     res.json(details);
 })
 
+=======
+
+
+const app= express()
+app.use(express.json())
+
+
+app.get('/',(req,res)=>{
+    res.send("Server running!");
+})
+app.post('/insert',async (req, res) => {
+    const details = await db.collection('recipe').insertOne({name:req.params.name,password:req.params.password
+    })
+ res.json(details);
+});
+>>>>>>> b550d7d7544c92cb183850c48d2663dd81948f34
 
 
 

@@ -14,6 +14,7 @@ const Home =() =>{
         nav("/register")
     }
     return(
+<<<<<<< HEAD
         <div className="home1">
             <>
                 <br/>
@@ -21,6 +22,16 @@ const Home =() =>{
                 <button onClick={register1}>Register</button>
                <div className="h"> <b><i>Recipe App</i></b></div>
             </>
+=======
+        <div classname="home">
+            <div classname="all">
+                <br/>
+                <button onClick={login1}>Log-in</button><br/>
+                <button onClick={register1}>Register</button>
+                <img src="logo.jpg" height="300px" width="300px"/><br/>
+                <h1><b><i>Recipe App</i></b></h1>
+            </div>
+>>>>>>> b550d7d7544c92cb183850c48d2663dd81948f34
         </div>
     );
 }

@@ -2,11 +2,20 @@
   "name": "recipe-app",
   "version": "1.0.0",
   "description": "",
+<<<<<<< HEAD
   "main": "app.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.js"
+=======
+  "main": "server.js",
+   "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon src/server.js"
+   
+>>>>>>> b550d7d7544c92cb183850c48d2663dd81948f34
   },
   "author": "",
   "license": "ISC",
@@ -15,9 +24,12 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "ejs": "^3.1.9",
+    "es": "^0.8.0",
     "express": "^4.18.2",
     "mongodb": "^5.3.0",
     "mongoose": "^7.1.0",
     "nodemon": "^2.0.22"
+   
+    
   }
 }
