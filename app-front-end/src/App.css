@@ -1,47 +1,68 @@
-body {
-	font-family: Arial, sans-serif;
-	background-color: #f2f2f2;
-}
+.home{
+	background-color: #8b9694;
+	min-height:100hv;
 
-.container {
-	margin: 0 auto;
-	width: 300px;
-	margin-top: 50px;
-	background-color: #fff;
-	padding: 20px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
+  }
+  .login{
+	background-color: rgb(142, 214, 241);
+	min-height:100hv;
+	text-align:center;
+  }
+  .register{
+	background-color:lightgoldenrodyellow;
+	min-height:100hv ;
+  }
+  .all{
 	text-align: center;
-	margin-bottom: 20px;
-	color: #333;
-}
+	min-height: 100vh;
+	font-size: calc(10px + 2vmin);
+	color: rgb(23, 22, 22);
+  }
+  img{
+	border-radius: 100%;
+	margin-left: 40%;
 
-form label {
-	display: block;
-	margin-bottom: 10px;
-	color: #666;
-}
-
-form input[type="text"], form input[type="password"] {
-	display: block;
-	padding: 10px;
-	margin-bottom: 20px;
-	width: 100%;
-	border: none;
-	border-bottom: 2px solid #ccc;
-}
-
-form input[type="submit"] {
-	background-color: #4CAF50;
-	color: #fff;
-	padding: 10px;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-}
-
-form input[type="submit"]:hover {
-	background-color: #3e8e41;
-}
+	
+  }
+  h1{
+	text-align:center;
+  }
+  button{
+	margin-left: 80%;
+	font-family:cursive;
+	height:30px;
+	width:100px;
+	border-radius: 50px;
+  }
+  .Abc{
+	margin-left: -5%;
+  }
+  .screen1{
+	width:760px;
+	height:650px;
+  }
+  .screen2{
+	width:773px;
+	height:650px;
+	margin-left: 760px;
+	margin-top: -650px;
+  }
+  p{
+	text-align: center;
+	font-family: cursive;
+  }
+  .inputfield{
+	height:30px;
+	width:83%;
+	margin-left:5%;
+	margin-top: 1%;
+  }
+  .enter{
+	margin-top:-1%;
+	margin-left: 2%;
+  }
+  .color{
+	background-color:lightgray;
+	min-height: 100vh;
+  }
+  

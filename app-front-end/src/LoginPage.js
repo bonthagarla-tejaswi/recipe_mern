@@ -1,58 +1,46 @@
 import React from 'react';
-
-class LoginPage extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      username: '',
-      password: '',
-    };
-  }
-
-  handleInputChange = (event) => {
-    const target = event.target;
-    const name = target.name;
-    const value = target.value;
-
-    this.setState({
-      [name]: value,
-    });
-  }
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle login logic
-  }
-
-  render() {
+import axios from 'axios';
+import {useState} from 'react';
+import {useNavigate} from "react-router-dom";
+const LoginPage=()=>{
+  const nav=useNavigate();
+  const [name,setName]=useState("");
+  const [password,setPassword]=useState("");
+  const Handleclick=async()=>{
+     const responce = await axios.get("http://localhost:9000/LoginPage/"+name+"/"+password);
+        console.log(responce.data);
+        if(responce.data)
+        {
+            nav('/main');
+        }
+        else{
+            alert("failed")
+        }
+    }
     return (
-      <div className="login-page">
+      <div className="login" >
+        
         <h1>Login to Your Account</h1>
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="username">Username:</label>
+        
+         <p> UserName:</p>
           <input
             type="text"
-            id="username"
-            name="username"
-            value={this.state.username}
-            onChange={this.handleInputChange}
-            required
-          />
-          <label htmlFor="password">Password:</label>
+            id="name"
+            name="name"
+            onChange={(e)=>setName(e.target.value)}
+          /><br></br><br></br>
+         <p> Password:</p>
           <input
             type="password"
             id="password"
             name="password"
-            value={this.state.password}
-            onChange={this.handleInputChange}
-            required
-          />
-          <button type="submit">login</button>
-        </form>
+            onChange={(e)=>setPassword(e.target.value)}
+          /><br></br><br></br><br></br>
+          <button onClick={Handleclick}>Login</button>
+      
       </div>
     );
   }
-}
 
-export default LoginPage;
+
+export default LoginPage;
