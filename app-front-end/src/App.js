@@ -1,13 +1,11 @@
 import './App.css';
-import Home from './home.js';
-import LoginPage from './LoginPage';
 import './App.css'
+import UserProfile from './profile';
 
 function App() {
   return (
     <div className="App">
-
-      <LoginPage />
+      <UserProfile/>
     </div>
   );
 }
